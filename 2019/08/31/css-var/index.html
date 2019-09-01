@@ -106,7 +106,7 @@
 
 
 
-  <meta name="keywords" content="Testing,">
+  <meta name="keywords" content="Vue,前端开发,">
 
 
 
@@ -117,18 +117,18 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta name="keywords" content="Testing">
+<meta name="description" content="有时候需要将Vue组件的props属性用于style样式的属性，而且不能动态的绑定:style属性。那怎么样才能把props属性变量用于style标签的css属性呢？下面介绍css变量的概念及vue组件的如何应用 CSS变量1.变量声明变量前加两根连词线 -- 1234body &amp;#123;    --foo: #fff;    --bar: #000;&amp;#125;  foo和bar就是 body">
+<meta name="keywords" content="Vue,前端开发">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2019/08/25/hello-world/index.html">
+<meta property="og:title" content="Vue组件内如何让style使用props属性">
+<meta property="og:url" content="http://yoursite.com/2019/08/31/css-var/index.html">
 <meta property="og:site_name" content="Coder&#39;s Faith">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="有时候需要将Vue组件的props属性用于style样式的属性，而且不能动态的绑定:style属性。那怎么样才能把props属性变量用于style标签的css属性呢？下面介绍css变量的概念及vue组件的如何应用 CSS变量1.变量声明变量前加两根连词线 -- 1234body &amp;#123;    --foo: #fff;    --bar: #000;&amp;#125;  foo和bar就是 body">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-25T13:27:25.489Z">
+<meta property="og:updated_time" content="2019-09-01T10:19:47.087Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="Vue组件内如何让style使用props属性">
+<meta name="twitter:description" content="有时候需要将Vue组件的props属性用于style样式的属性，而且不能动态的绑定:style属性。那怎么样才能把props属性变量用于style标签的css属性呢？下面介绍css变量的概念及vue组件的如何应用 CSS变量1.变量声明变量前加两根连词线 -- 1234body &amp;#123;    --foo: #fff;    --bar: #000;&amp;#125;  foo和bar就是 body">
 
 
 
@@ -158,13 +158,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/08/25/hello-world/">
+  <link rel="canonical" href="http://yoursite.com/2019/08/31/css-var/">
 
 
 
 
 
-  <title>Hello World | Coder's Faith</title>
+  <title>Vue组件内如何让style使用props属性 | Coder's Faith</title>
   
 
 
@@ -301,7 +301,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/25/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/31/css-var/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="郭靖大侠">
@@ -318,7 +318,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">Vue组件内如何让style使用props属性</h1>
         
 
         <div class="post-meta">
@@ -330,8 +330,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-25T19:46:33+08:00">
-                2019-08-25
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-31T09:54:31+08:00">
+                2019-08-31
               </time>
             
 
@@ -368,19 +368,17 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <p>有时候需要将Vue组件的props属性用于style样式的属性，而且不能动态的绑定:style属性。那怎么样才能把props属性变量用于style标签的css属性呢？下面介绍css变量的概念及vue组件的如何应用</p>
+<h2 id="CSS变量"><a href="#CSS变量" class="headerlink" title="CSS变量"></a>CSS变量</h2><h3 id="1-变量声明"><a href="#1-变量声明" class="headerlink" title="1.变量声明"></a>1.变量声明</h3><p>变量前加两根连词线 --</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">--foo</span>: <span class="number">#fff</span>;</span><br><span class="line">    <span class="attribute">--bar</span>: <span class="number">#000</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>foo和bar就是 body 标签作用域内的变量。</p>
+<h3 id="2-使用css变量"><a href="#2-使用css变量" class="headerlink" title="2.使用css变量"></a>2.使用css变量</h3><p>var() 函数用与读取变量。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> <span class="selector-tag">p</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="built_in">var</span>(--foo);</span><br><span class="line">    <span class="attribute">text-decoration-color</span>: <span class="built_in">var</span>(--bar);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h3 id="3-在vue组件内使用"><a href="#3-在vue组件内使用" class="headerlink" title="3.在vue组件内使用"></a>3.在vue组件内使用</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">    &lt;div class=&quot;wrap&quot; :style=&quot;--color:$&#123;`fontColor`&#125;&quot;&gt;</span><br><span class="line">        &lt;a href=&quot;####&quot; class=&quot;link&quot;&gt;link&lt;/a&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">    export default &#123;</span><br><span class="line">        name: &apos;vue-var&apos;,</span><br><span class="line">        props: &#123;</span><br><span class="line">            fontColor: &#123;</span><br><span class="line">                default: &apos;#000&apos;,</span><br><span class="line">                type: String</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line">    .link &#123;</span><br><span class="line">        color: var(--color);</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>参考链接: <a href="http://www.ruanyifeng.com/blog/2017/05/css-variables.html" target="_blank" rel="noopener">CSS 变量教程</a></p>
 
       
     </div>
@@ -388,14 +386,6 @@
     
     
 
-    
-      <div>
-        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
-    <img id="wechat_subscriber_qcode" src="/path/to/your/wechatqcode ex. /uploads/wechat-qcode.jpg" alt="郭靖大侠 wechat" style="width: 200px; max-width: 100%;">
-    <div>ex. subscribe to my blog by scanning my public wechat account</div>
-</div>
-
-      </div>
     
 
     
@@ -406,7 +396,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Testing/" rel="tag"># Testing</a>
+            <a href="/tags/Vue/" rel="tag"># Vue</a>
+          
+            <a href="/tags/前端开发/" rel="tag"># 前端开发</a>
           
         </div>
       
@@ -415,22 +407,6 @@
       
       
 
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/08/31/Vue/" rel="prev" title="Vue组件内如何让style使用props属性">
-                Vue组件内如何让style使用props属性 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
       
 
       
@@ -506,7 +482,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -568,7 +544,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS变量"><span class="nav-number">1.</span> <span class="nav-text">CSS变量</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-变量声明"><span class="nav-number">1.1.</span> <span class="nav-text">1.变量声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-使用css变量"><span class="nav-number">1.2.</span> <span class="nav-text">2.使用css变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-在vue组件内使用"><span class="nav-number">1.3.</span> <span class="nav-text">3.在vue组件内使用</span></a></li></ol></li></ol></div>
             
 
           </div>
